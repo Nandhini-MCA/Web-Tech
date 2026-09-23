@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<learnhub>
+
+    <title>Welcome to LearnHub!</title>
+
+    <subtitle>
+        Your gateway to mastering technology
+    </subtitle>
+
+
+    <courses>
+
+
+        <!-- Course 1 -->
+
+        <course>
+
+            <icon>💻</icon>
+
+            <name>Programming</name>
+
+            <description>
+                Build strong programming skills.
+                Learn Python, Java and C++ with
+                simple examples and practical programs.
+            </description>
+
+            <skills>
+                <skill>Python</skill>
+                <skill>Java</skill>
+                <skill>C++</skill>
+            </skills>
+
+        </course>
+
+
+        <!-- Course 2 -->
+
+        <course>
+
+            <icon>📊</icon>
+
+            <name>Data Science</name>
+
+            <description>
+                Learn data analysis, visualization
+                and machine learning techniques
+                to understand useful information.
+            </description>
+
+            <skills>
+                <skill>Python</skill>
+                <skill>ML</skill>
+                <skill>Statistics</skill>
+            </skills>
+
+        </course>
+
+
+        <!-- Course 3 -->
+
+        <course>
+
+            <icon>🌐</icon>
+
+            <name>Web Development</name>
+
+            <description>
+                Create modern and responsive websites
+                using HTML, CSS and JavaScript
+                with creative designs.
+            </description>
+
+            <skills>
+                <skill>HTML</skill>
+                <skill>CSS</skill>
+                <skill>JavaScript</skill>
+            </skills>
+
+        </course>
+
+
+        <!-- Course 4 -->
+
+        <course>
+
+            <icon>🗄️</icon>
+
+            <name>Databases</name>
+
+            <description>
+                Manage and organize data efficiently.
+                Learn database concepts and
+                basic SQL operations.
+            </description>
+
+            <skills>
+                <skill>SQL</skill>
+                <skill>MySQL</skill>
+                <skill>Database</skill>
+            </skills>
+
+        </course>
+
+
+        <!-- Course 5 -->
+
+        <course>
+
+            <icon>🔐</icon>
+
+            <name>Cyber Security</name>
+
+            <description>
+                Learn the basics of cyber security,
+                data protection and safe online
+                practices.
+            </description>
+
+            <skills>
+                <skill>Security</skill>
+                <skill>Network</skill>
+                <skill>Privacy</skill>
+            </skills>
+
+        </course>
+
+
+    </courses>
+
+</learnhub>

@@ -1,0 +1,123 @@
+/* PROGRAM 5 - SIMPLE XML CSS DESIGN */
+
+learnhub {
+    display: block;
+    min-height: 100vh;
+    background-color: #eef6fb;
+    font-family: Arial, sans-serif;
+    padding-bottom: 40px;
+}
+
+
+/* HEADER */
+
+title {
+    display: block;
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 28px;
+}
+
+subtitle {
+    display: block;
+    background-color: #164e63;
+    color: #ccecf7;
+    text-align: center;
+    padding: 0 20px 28px;
+    font-size: 16px;
+}
+
+
+/* COURSE SECTION */
+
+courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    padding: 30px;
+}
+
+
+/* COURSE CARD */
+
+course {
+    display: block;
+    width: 29%;
+    min-height: 190px;
+
+    background-color: white;
+
+    border-top: 6px solid #1597bb;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    box-shadow: 0 3px 10px #c5d5dc;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+
+icon {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+
+/* COURSE NAME */
+
+name {
+    display: inline;
+    color: #164e63;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* DESCRIPTION */
+
+description {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* SKILLS */
+
+skills {
+    display: block;
+    margin-top: 18px;
+}
+
+skill {
+    display: inline-block;
+
+    background-color: #d9f2fa;
+    color: #164e63;
+
+    padding: 6px 12px;
+    margin: 3px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* SIMPLE HOVER */
+
+course:hover {
+    box-shadow: 0 6px 15px #a9c3ce;
+    transform: translateY(-4px);
+}

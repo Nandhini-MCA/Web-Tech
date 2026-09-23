@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Types</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: #8b4513;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .internal {
+            background-color: #fff3e0;
+            border-left: 6px solid #ff9800;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #e65100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Styling Methods</h1>
+        <p>Inline • Internal • External CSS</p>
+    </header>
+
+    <!-- Inline CSS -->
+    <section>
+        <h2>1. Inline CSS</h2>
+
+        <p style="color:white; background-color:#e67e22;
+                  padding:15px; border-radius:8px;">
+            This paragraph is designed using Inline CSS.
+        </p>
+
+        <p>
+            Inline CSS is written directly inside the HTML tag
+            using the style attribute.
+        </p>
+    </section>
+
+
+    <!-- Internal CSS -->
+    <section class="internal">
+        <h2>2. Internal CSS</h2>
+
+        <p>
+            This section is designed using Internal CSS.
+            The style rules are written inside the
+            &lt;style&gt; tag in the HTML file.
+        </p>
+    </section>
+
+
+    <!-- External CSS -->
+    <section class="external">
+        <h2>3. External CSS</h2>
+
+        <p>
+            This section is designed using External CSS.
+            The CSS rules are stored in a separate file
+            called style.css.
+        </p>
+    </section>
+
+    <footer>
+        <p>Web Technologies Lab | CSS Example</p>
+    </footer>
+
+</body>
+</html>

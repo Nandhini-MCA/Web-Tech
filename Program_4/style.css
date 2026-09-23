@@ -1,0 +1,118 @@
+/* EXTERNAL CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+}
+
+
+/* Main Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 5px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background-color: #ff6f00;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+
+/* Cards */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+
+/* Individual Card */
+
+.blog-card {
+    width: 33.33%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #ccc;
+    transition: 0.3s;
+}
+
+
+/* Card Image */
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* Card Content */
+
+.content {
+    padding: 18px;
+}
+
+.content small {
+    color: #ff6f00;
+    font-size: 13px;
+}
+
+.content h2 {
+    margin: 12px 0;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.content a {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    padding: 18px;
+    text-align: center;
+    background-color: #00897b;
+    color: white;
+    border-radius: 10px;
+}
