@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse and Form Events</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f6fc;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .box {
+            background: lightblue;
+            padding: 30px;
+            width: 200px;
+            margin: 25px auto;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        form {
+            margin-top: 25px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 18px;
+            background: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #msg {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Mouse and Form Events</h2>
+
+    <div class="box"
+         onmouseover="this.style.background='lightgreen'"
+         onmouseout="this.style.background='lightblue'"
+         onclick="this.style.background='red'">
+        Hover / Click Me
+    </div>
+
+    <form id="form">
+        <input id="name" type="text"
+               placeholder="Enter your name" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="msg"></p>
+
+    <script>
+        document.getElementById("form").onsubmit = function(e) {
+            e.preventDefault();
+
+            document.getElementById("msg").innerHTML =
+                "Hello, " + document.getElementById("name").value + "!";
+        };
+    </script>
+
+</body>
+</html>

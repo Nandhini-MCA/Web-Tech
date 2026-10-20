@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide and Show Paragraph</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f6fc;
+            padding: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: 60%;
+			color: blue;
+			
+        }
+
+        button {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #315f85;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $("#hideBtn").click(function() {
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>Hide and Show Paragraph</h2>
+
+    <p>This is a simple paragraph using jQuery.</p>
+
+    <button id="hideBtn">Hide / Show</button>
+
+</body>
+</html>
