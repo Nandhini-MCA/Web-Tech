@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form Validation</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef4fb;
+            padding: 30px;
+        }
+
+        .form-box {
+            width: 320px;
+            margin: 50px auto;
+            padding: 25px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #315f85;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            box-sizing: border-box;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        .success {
+            color: green;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+    <h2>Login Form</h2>
+
+    <form name="loginForm" novalidate>
+
+        <label>Email:</label>
+        <input type="email" name="email"
+               ng-model="email" required>
+
+        <span class="error"
+              ng-show="loginForm.email.$touched &&
+                       loginForm.email.$error.required">
+            Email is required
+        </span>
+
+        <span class="error"
+              ng-show="loginForm.email.$touched &&
+                       loginForm.email.$error.email">
+            Invalid email format
+        </span>
+
+        <label>Password:</label>
+        <input type="password" name="password"
+               ng-model="password"
+               required ng-minlength="6">
+
+        <span class="error"
+              ng-show="loginForm.password.$touched &&
+                       loginForm.password.$error.required">
+            Password is required
+        </span>
+
+        <span class="error"
+              ng-show="loginForm.password.$touched &&
+                       loginForm.password.$error.minlength">
+            Minimum 6 characters required
+        </span>
+
+        <p class="success" ng-show="loginForm.$valid">
+            All fields look good!
+        </p>
+
+        <button type="submit"
+                ng-disabled="loginForm.$invalid">
+            Login
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
