@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #eef6ff;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #173b68;
+        }
+
+        img {
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            border: 2px solid lightblue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Image Map Example</h2>
+
+    <img src="Image Map Example_ Web Technology Tiles.png"
+         alt="Frontend and Backend Technologies"
+         usemap="#techmap"
+         id="techImage">
+
+    <map name="techmap">
+
+        <!-- React -->
+        <area shape="rect"
+              coords="130,110,310,290"
+              href="https://react.dev"
+              target="_blank"
+              alt="React">
+
+        <!-- HTML -->
+        <area shape="rect"
+              coords="340,110,520,290"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              alt="HTML">
+
+        <!-- CSS -->
+        <area shape="rect"
+              coords="550,110,730,290"
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              alt="CSS">
+
+        <!-- Node.js -->
+        <area shape="rect"
+              coords="130,370,310,550"
+              href="https://nodejs.org"
+              target="_blank"
+              alt="Node.js">
+
+        <!-- JavaScript -->
+        <area shape="rect"
+              coords="340,370,520,550"
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              alt="JavaScript">
+
+        <!-- Python -->
+        <area shape="rect"
+              coords="550,370,730,550"
+              href="https://www.python.org"
+              target="_blank"
+              alt="Python">
+
+    </map>
+
+</body>
+</html>
