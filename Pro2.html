@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My CV</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #e8eaf6;
+            padding: 20px;
+        }
+
+        .cv {
+            max-width: 950px;
+            margin: auto;
+            display: flex;
+            background: white;
+            box-shadow: 0 0 15px #999;
+        }
+
+        .left {
+            width: 30%;
+            background: #3949ab;
+            color: white;
+            padding: 25px 20px;
+        }
+
+        .profile {
+            width: 90px;
+            height: 90px;
+            background: white;
+            color: #3949ab;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .left h1 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 25px;
+        }
+
+        .left h3 {
+            margin-top: 25px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+        .left p,
+        .left li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .left ul {
+            margin-left: 18px;
+            margin-top: 8px;
+        }
+
+        .right {
+            width: 70%;
+            padding: 25px;
+        }
+
+        .right h2 {
+            color: #3949ab;
+            border-bottom: 2px solid #3949ab;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+
+        .right h2:first-child {
+            margin-top: 0;
+        }
+
+        .right p,
+        .right li {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .right ul {
+            margin-left: 20px;
+        }
+
+        .project {
+            background: #f1f3ff;
+            padding: 10px;
+            margin-bottom: 8px;
+            border-left: 4px solid #3949ab;
+        }
+
+        .project h3 {
+            color: #303f9f;
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+            color: #555;
+        }
+
+        @media screen and (max-width: 700px) {
+            .cv {
+                flex-direction: column;
+            }
+
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+		.education {
+			background: #f1f3ff;
+			padding: 10px;
+			margin-bottom: 10px;
+			border-left: 4px solid #3949ab;
+		}
+
+		.education h3 {
+			color: #303f9f;
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+
+		.education p {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="cv">
+
+        <div class="left">
+
+            <div class="profile">N</div>
+
+            <h1>Nandhini M</h1>
+            <p style="text-align:center;">MCA Student</p>
+            <p style="text-align:center;">Periyar University</p>
+
+            <h3>Contact</h3>
+            <p>Email: nandhinimath.89@gmail.com</p>
+            <p>Phone: 9486306096</p>
+            <p>Location: Ammapet, Salem, Tamil Nadu</p>
+
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>React</li>
+            </ul>
+
+            <h3>Strengths</h3>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Team Work</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+            </ul>
+
+            <h3>Languages</h3>
+            <p>Tamil</p>
+            <p>English</p>
+
+        </div>
+
+        <div class="right">
+
+            <h2>Career Objective</h2>
+            <p>
+                I am an enthusiastic MCA student interested in web development,
+                software applications, and new technologies. I enjoy creating
+                simple and useful projects.
+            </p>
+			<p>
+                To obtain a challenging position where I can use my technical
+                knowledge, improve my skills, and contribute to the growth of
+                the organization.
+            </p>
+
+            <h2>Education</h2>
+
+			<div class="education">
+				<h3>Master of Computer Applications (MCA)</h3>
+				<p><b>Institution:</b> Periyar University, Tamil Nadu</p>
+				<p><b>Duration:</b> 2025 – 2027</p>
+			</div>
+
+			<div class="education">
+				<h3>Bachelor's Degree</h3>
+				<p><b>University:</b> Periyar University</p>
+				<p><b>Percentage:</b> 80.50%</p>
+			</div>
+
+			<div class="education">
+				<h3>Higher Secondary Certificate (HSC)</h3>
+				<p><b>School:</b> Government Higher Secondary School</p>
+				<p><b>Percentage:</b> 80.50%</p>
+			</div>
+
+			<div class="education">
+				<h3>Secondary School Leaving Certificate (SSLC)</h3>
+				<p><b>School:</b> Government Higher Secondary School</p>
+				<p><b>Percentage:</b> 80.50%</p>
+			</div>
+
+            <h2>Certificates</h2>
+            <ul>
+                <li>Google AI Essentials Certificate</li>
+                <li>Web Development Certificate</li>
+                <li>Python Programming Certificate</li>
+            </ul>
+
+            <h2>Internship</h2>
+            <div class="project">
+                <h3>Web Development Intern</h3>
+                <p>
+                    Completed internship in web development and gained
+                    practical knowledge in HTML, CSS, JavaScript, and
+                    responsive website design.
+                </p>
+            </div>
+
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>1. AI Maths Notation Conversion and Solving System</h3>
+                <p>
+                    An AI-based educational platform that converts and solves
+                    mathematical problems using image input and AI technology.
+                </p>
+                <p><b>Role:</b> App Developer</p>
+            </div>
+
+            <div class="project">
+                <h3>2. E-Commerce Media Website</h3>
+                <p>
+                    A responsive e-commerce media website designed to display
+                    products, product details, and shopping-related content
+                    using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>3. Note Sharing Website</h3>
+                <p>
+                    A web application that allows students to upload, view,
+                    share, and download educational notes and textbooks online.
+                </p>
+            </div>
+
+            <footer>
+                © 2026 Nandhu | My CV
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
